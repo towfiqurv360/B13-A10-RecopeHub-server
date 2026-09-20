@@ -16,14 +16,13 @@ import paymentRoutes from "./routes/paymentRoutes.js";
 dotenv.config();
 const app = express();
 
-
 app.set("trust proxy", 1); 
 
 const corsOptions = {
   origin: [
     "http://localhost:3000",
     "http://localhost:5173",
-    "https://b13-assignment-10-recipehub.vercel.app",
+    "https://b13-a10-recope-hub-client.vercel.app",
     process.env.CLIENT_URL
   ].filter(Boolean),
   credentials: true,
